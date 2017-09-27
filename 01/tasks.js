@@ -6,32 +6,11 @@
  * '1 и 6.45, -2, но 8, а затем 15, то есть 2.7 и -1028' => { min: -1028, max: 15 }
  */
 function getMinMax(string) {
-  function getFloatFirst(str) {
-    let anotherStr = `${str}`;
+  const regex = /[+-]?\d+(\.\d+)?/g;
+  const floats = string.match(regex).map(v => parseFloat(v));
+  const min = Math.min(...floats);
+  const max = Math.max(...floats);
 
-    while (anotherStr.length !== 0 && isNaN(parseFloat(anotherStr))) {
-      anotherStr = anotherStr.substr(1);
-    }
-    return anotherStr;
-  }
-
-  let min, max, flag = true;
-
-  let ans = getFloatFirst(string);
-  let numb = parseFloat(ans);
-
-  while (!isNaN(numb)) {
-    if (flag) {
-      flag = false;
-      min = numb;
-      max = numb;
-    } else {
-      min = Math.min(min, numb);
-      max = Math.max(max, numb);
-    }
-    ans = getFloatFirst(ans.substr((`${numb}`).length));
-    numb = parseFloat(ans);
-  }
   return { min, max };
 }
 
