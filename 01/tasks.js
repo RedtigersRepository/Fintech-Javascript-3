@@ -66,17 +66,15 @@ function fibonacciWithCache(x) {
  */
 function printNumbers(max, cols) {
   function getStrNumb(x) {
-    if (('' + x).length === 1) {
-      return ' ' + x;
-    }
-    return x;
+    return (x < 10) ? ' ' + x : x;
   }
   max += 1;
   const excess = max - cols * Math.trunc(max / cols);
+  const cieledNumb = Math.ceil(max / cols);
   let ansStr = '';
 
-  for (let i = 0; i < Math.ceil(max / cols); i++) {
-    let rowRange = (i === Math.ceil(max / cols) - 1 && excess !== 0) ? excess : cols;
+  for (let i = 0; i < cieledNumb; i++) {
+    let rowRange = (i === cieledNumb - 1 && excess !== 0) ? excess : cols;
 
     for (let j = 0; j < rowRange; j++) {
       let nextNumb = i + Math.min(j, excess) + j * Math.floor(max / cols);
@@ -86,7 +84,7 @@ function printNumbers(max, cols) {
         ansStr += ' ';
       }
     }
-    if (i !== Math.ceil(max / cols) - 1) {
+    if (i !== cieledNumb - 1) {
       ansStr += '\n';
     }
   }
