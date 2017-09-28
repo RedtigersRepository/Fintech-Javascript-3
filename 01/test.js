@@ -16,7 +16,7 @@ describe('Lesson 1', () => {
     });
   });
 
-/*  describe('task 2 fibonacciSimple', () => {
+  describe('task 2 fibonacciSimple', () => {
     it('should compute fibonacci number', () => {
       expect(fibonacciSimple(1)).to.be(1);
       expect(fibonacciSimple(6)).to.be(8);
@@ -32,7 +32,7 @@ describe('Lesson 1', () => {
     });
   });
 
-  describe('task 4 rle', () => {
+/*  describe('task 4 rle', () => {
     it('should convert the string correctly', () => {
       expect(rle('BCCDDDEEEE')).to.eql('BC2D3E4');
       expect(rle('AAAB')).to.eql('A3B');

@@ -22,7 +22,10 @@ function getMinMax(string) {
  * @return {number} число под номером х
  */
 function fibonacciSimple(x) {
-  return x;
+  if (x > 2) {
+    return fibonacciSimple(x - 1) + fibonacciSimple(x - 2);
+  }
+  return 1;
 }
 
 /* ============================================= */
@@ -33,8 +36,15 @@ function fibonacciSimple(x) {
  * @param {number} x номер числа
  * @return {number} число под номером х
  */
+
+let cache = { 0: 0, 1: 1 };
+
 function fibonacciWithCache(x) {
-  return x;
+  if (x in cache) {
+    return cache[x];
+  }
+  cache[x] = fibonacciWithCache(x - 1) + fibonacciWithCache(x - 2);
+  return cache[x];
 }
 
 /* ============================================= */
