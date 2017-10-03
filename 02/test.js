@@ -15,7 +15,7 @@ describe('Lesson 2', () => {
     });
   });
 
-  /*describe('customBind', () => {
+  describe('customBind', () => {
     it('should bind arguments and context - 1', () => {
       let lastContext = null;
       let lastParams = null;
@@ -51,7 +51,7 @@ describe('Lesson 2', () => {
     });
   });
 
-  describe('sum', () => {
+  /*describe('sum', () => {
     it('should compute sum', () => {
       expect(sum(1)(2)(4)(5)()).to.be(12);
       expect(sum(1)()).to.be(1);
