@@ -1,0 +1,124 @@
+@import "http://fonts.fontstorage.com/import/bender.css";
+
+body {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: -webkit-linear-gradient(left top, #f5fcd6, #e7ff84);
+  font-family: 'Bender';
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  text-indent: 25px;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: #a435ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  table-layout: fixed;
+  text-align: center;
+}
+
+caption {
+  margin-bottom: 1%;
+  font-size: 2em;
+}
+
+thead th {
+  border-bottom: 1px solid #a435ff;
+}
+
+td,
+th {
+  vertical-align: middle;
+}
+
+th {
+  width: 30%;
+  background: #b0e0e6;
+}
+
+.first {
+  background: #ffdf87;
+}
+
+.second {
+  background-color: #a3a7ff;
+}
+
+tr:hover {
+  background-color: #50c9a1;
+}
+
+#tab2 {
+  border-collapse: separate;
+  border-spacing: 8px 8px;
+  width: 400px;
+}
+
+div {
+  overflow: hidden;
+  text-indent: 10px;
+  width: 90%;
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.origin {
+  font-size: 0.8em;
+  overflow: auto;
+}
+
+.pfc {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.y1 {
+  background: #3fbe80;
+}
+
+.y2 {
+  background: #34cb98;
+}
+
+.y3 {
+  background: #26d8ba;
+}
+
+.y4 {
+  background: #19e6e6;
+}
+
+.y5 {
+  background: #0cccf3;
+}
+
+.y6 {
+  background: #02aaff;
+}

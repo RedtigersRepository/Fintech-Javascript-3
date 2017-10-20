@@ -1,0 +1,51 @@
+@import "http://fonts.fontstorage.com/import/kelson.css";
+
+body {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  font-family: 'Kelson Sans';
+  color: #265a68;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+p {
+  font-size: 1.1em;
+  text-indent: 25px;
+}
+
+#aboutMe {
+  text-align: center;
+}
+
+ol {
+  counter-reset: myCounter;
+  font-size: 1.1em;
+  margin-left: 50px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+ol > li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  padding-right: 7px;
+}
+
+.left_align {
+  align-self: left;
+}
