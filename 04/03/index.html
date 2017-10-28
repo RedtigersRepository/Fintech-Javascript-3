@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Задание 3</title>
+    <title>Task 3</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Создать ненумерованный список, и внутри одного элемента - нумерованный список:</h1>
+<!--<h1>Создать ненумерованный список, и внутри одного элемента - нумерованный список:</h1>
 <ul>
     <li> У ненумерованного списка `точки` должны быть желтого цвета </li>
     <li> У нумерованного числа - синего </li>
-</ul>
+</ul>-->
+<div class="container">
+  <ul class="container__ul">
+    <li><a href="">First element</a></li>
+    <li><a href="">Second element</a>
+        <ol class="container__ul__ol">
+            <li><a href="">First sub element</a></li>
+            <li><a href="">Second sub element</a></li>
+            <li><a href="">Third sub element</a></li>
+        </ol>
+    </li>
+    <li><a href="">Third element</a></li>                       
+  </ul>
+</div>
 </body>
 </html>
