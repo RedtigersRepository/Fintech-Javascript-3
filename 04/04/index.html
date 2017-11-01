@@ -2,28 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Задание 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<h1>Сделать страничку с произвольным контентом и выполнить следующие задания:</h1>
+<!--<h1>Сделать страничку с произвольным контентом и выполнить следующие задания:</h1>
 <ul>
-    <li> Подцепить шрифты Roboto и Roboto Condensed;</li>
-    <li> Заголовки должны быть Roboto Condensed, все остальное - Roboto;</li>
-    <li> Весь контент должен ограничиваться по ширине на 960px и быть по центру страницы;</li>
-    <li> Заголовок первого порядка - "Блог обо мне";</li>
-    <li> После заголовка первого порядка  Абцаз текста - анонс;</li>
-    <li> Меню с якорями на нижеследующие разделы (2, 3);</li>
-    <li> У каждого подраздела свой Подзаголовок;</li>
-    <li> После каждого Подзаголовка Абцаз текста - анонс но с меньшим кеглем;</li>
-    <li> После анонса в подразделе 2-3 абзаца просто текста;</li>
-    <li> Внутри одного раздела картинка с описанием на случай, если она не загрузится;</li>
-    <li> Внутри другого видео с youtube;</li>
-    <li> В конце страницы яндекс/гугл карта с меткой;</li>
-    <li> И видео, и карта должны быть на всю ширину контейнера и вне зависимости от размеров окна сохранять пропорции 16/9;</li>
-    <li> Внутри абзацев текста должны присутствовать слова повышенной важности, которые нужно соответствующие выделять,
-        также должны присутствовать слова, которые необходимо выделить интонационно;</li>
-    <li> Также внутри текста расставить ссылки (1-2), стилизовать под разные состояния;</li>
-    <li> Итого - 2 вида головков, 3 вида абзацев, выделения strong и em, ссылки, изображения, айфреймы с youtube, картой.</li>
-</ul>
+  <li> Подцепить шрифты Roboto и Roboto Condensed;</li>
+  <li> Заголовки должны быть Roboto Condensed, все остальное - Roboto;</li>
+  <li> Весь контент должен ограничиваться по ширине на 960px и быть по центру страницы;</li>
+  <li> Заголовок первого порядка - "Блог обо мне";</li>
+  <li> После заголовка первого порядка  Абцаз текста - анонс;</li>
+  <li> Меню с якорями на нижеследующие разделы (2, 3);</li>
+  <li> У каждого подраздела свой Подзаголовок;</li>
+  <li> После каждого Подзаголовка Абцаз текста - анонс но с меньшим кеглем;</li>
+  <li> После анонса в подразделе 2-3 абзаца просто текста;</li>
+  <li> Внутри одного раздела картинка с описанием на случай, если она не загрузится;</li>
+  <li> Внутри другого видео с youtube;</li>
+  <li> В конце страницы яндекс/гугл карта с меткой;</li>
+  <li> И видео, и карта должны быть на всю ширину контейнера и вне зависимости от размеров окна сохранять пропорции 16/9;</li>
+  <li> Внутри абзацев текста должны присутствовать слова повышенной важности, которые нужно соответствующие выделять,
+      также должны присутствовать слова, которые необходимо выделить интонационно;</li>
+  <li> Также внутри текста расставить ссылки (1-2), стилизовать под разные состояния;</li>
+  <li> Итого - 2 вида головков, 3 вида абзацев, выделения strong и em, ссылки, изображения, айфреймы с youtube, картой.</li>
+</ul>-->
+<div class="wrapper">
+
+  <div class="wrapper__menu">
+    <img class="wrapper__menu__profile_image" src="Me.jpg" alt="profile_image">
+
+    <div class="wrapper__menu__description">
+      <h3 class="name">Anton Vakhrushin</h3>
+      <br/>
+      <p class="description">Almost frontend developer</p>
+    </div>
+
+    <div class="wrapper__menu__contacts">
+      <a href="https://vk.com/id53847565" class="vk"></a>
+      <a href="https://www.instagram.com/anton_vakhrushin/?hl=ru" class="instagram"></a>
+      <a href="https://github.com/RedtigersRepository" class="github"></a>
+    </div>
+  </div>
+
+  <div class="wrapper__blog">
+    <header id="my_blog">My blog</header>
+
+    <div class="wrapper__blog__post first-post">
+      <h1>Первый пост обо мне</h1>
+      <br/>
+      <p>Это первый пост обо мне. Тут я могу рассказать много чего интересного, но конечно же не буду, лучше со мной лично поговорить)Зато, если эта страница понравится, я буду очень рад и может в следующий раз напишу о себе что-нибудь. А так - могу лишь рассказать о своей <b>курсовой, которую я собираюсь делать</b>. Дорогой ментор, который смотрит мою работу, как ты относишься к тому, если моя курсовая работа будет <strong>частью большого проекта</strong>, который мы делаем с друзьями и планируем его запускать? Обещаю, что моя часть будет масштабной и интересной, делать надо будет много.</p>
+    </div>
+
+    <div class="wrapper__blog__post second-post">
+      <h1>Второй пост</h1>
+      <br/>
+      <p>По поводу того, как проверить качество выполнения моей курсовой работы, если она будет частью большого проекта. <em>Ментора, закрепленного за мной</em> я могу добавить в ревьюеры, чтобы каждый мой ПР он мог проверить на качество кода. Думаю, неплохя идея, как вам? Если что, на мой репозиторий можно пройти по кнопачке, которая расположена слева в менюшке</p>
+    </div>
+
+    <div class="wrapper__blog__post second-post">
+      <h1>Третий пост</h1>
+      <br/>
+      <p id="long-post"><strong>Здесь просто будет текст для заполнения контентом:</strong>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button id="readmore" type="button" onclick ="document.getElementById('long-post').style.maxHeight='500px'; document.getElementById('readmore').style.display='none'">
+        Read more
+      </button>
+    </div>
+
+    <div class="wrapper__blog__post image-post">
+      <h1>Пост с картинкой</h1>
+      <br/>
+      <img src="tiger.jpg" alt="tigers are my love">
+    </div>
+
+    <div class="wrapper__blog__post video-post">
+      <h1>Пост с видео (интересный выпуск, кстати)</h1>
+      <br/>
+      <iframe src="https://www.youtube.com/embed/hQp_Cae8tzw" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+
+    <div class="wrapper__blog__post map-post">
+      <h1>Пост с картой (любимая вышечка)</h1>
+      <br/>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBa4QJRX3D" frameborder="0"></iframe>
+    </div>      
+  </div>
+
+  <div class="wrapper__upwards">
+    <a href="#" title="Вернуться к началу" class="topbutton">Вверх</a>
+  </div>
+
+</div>
+
 </body>
 </html>
