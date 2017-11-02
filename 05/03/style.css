@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+}
+
+.tags__container {
+  width: 829px;
+  height: 132px;
+  border-radius: 6px;
+  border: 1px solid #dddfe0;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.tag {
+  overflow: hidden;
+  height: 42px;
+  border-radius: 6px;
+  background-color: #eef2f7;
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 14px 11px;
+  margin: 6px;
+  display: inline-flex;
+}
+
+.tag__description {
+  color: #333;
+  padding-right: 5px;
+  text-align: left;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.tag__delete {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+  float: right;
+  padding-top: 3px;
+  margin-left: 7px;
+}
