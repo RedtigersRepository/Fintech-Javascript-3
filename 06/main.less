@@ -200,25 +200,25 @@ body {
       background-color: transparent;
     }
 
-      &__button {
-        width: 212px;
-        height: 62px;
-        font-family: 'Roboto', sans-serif;
-        box-sizing: border-box;
-        border-radius: 6px;
-        background-color: @main-color;
-        font-size: 17px;
-        line-height: 1.41;
-        text-align: center;
-        color: @text-color;
-        padding: 3px 0 0;
-        margin-bottom: 74px;
-        border: none;
-        cursor: pointer;
+    &__button {
+      width: 212px;
+      height: 62px;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+      border-radius: 6px;
+      background-color: @main-color;
+      font-size: 17px;
+      line-height: 1.41;
+      text-align: center;
+      color: @text-color;
+      padding: 3px 0 0;
+      margin-bottom: 74px;
+      border: none;
+      cursor: pointer;
 
-        &:hover {
-          background-color: darken(@main-color, 25%);
-        }
+      &:hover {
+        background-color: darken(@main-color, 25%);
+      }
     }
   }
 }
@@ -385,24 +385,24 @@ body {
     display: block;
 
     &__input {
-        height: 66px;
-        border-radius: 6px;
-        background-color: #eef2f7;
-        font-size: 18px;
-        padding: 7px 7px 7px 5px;
-        display: block;
-        border: none;
-        box-sizing: border-box;
-        width: 100%;
+      height: 66px;
+      border-radius: 6px;
+      background-color: #eef2f7;
+      font-size: 18px;
+      padding: 7px 7px 7px 5px;
+      display: block;
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
 
-      &:focus, &:valid {
+      &:focus,
+      &:valid {
         background-color: #fff;
         border-radius: 6px;
         box-sizing: border-box;
         border: 1px solid #eef2f7;
       }
     }
-
 
     &__input:focus ~ &__label {
       top: 5px;
@@ -433,7 +433,6 @@ body {
       font-size: 17px;
       text-align: center;
       color: #74a3c7;
-      position: absolute;
       pointer-events: none;
       left: 18px;
       top: 23px;
@@ -479,13 +478,12 @@ body {
       width: 100%;
       padding: 0;
       margin-bottom: 7px;
-      width: auto;
 
       &__radio-button {
         width: 258px;
         height: 66px;
         padding: 10px 20px;
-        margin: 14px 0 20px 0;
+        margin: 14px 0 20px;
         align-items: center;
         display: flex;
         box-sizing: border-box;
@@ -517,7 +515,7 @@ body {
 
         &__native:checked ~ &__mark {
           background-image: url(img/group-15.svg);
-        }        
+        }
       }
     }
 
@@ -531,7 +529,6 @@ body {
       font-family: 'Roboto', sans-serif;
       font-size: 21px;
       line-height: 1.15;
-      text-align: center;
     }
 
     &__submit {
