@@ -1,4 +1,98 @@
-a {
-  padding: 2px;
-  border: 1px solid black;
+@main-color: #ffdd2d;
+@main-size: 1080px;
+@text-color: #333;
+@mobile-size: 640px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.phone-field {
+  width: 320px;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  margin: 12px auto;
+  padding: 0;
+  display: block;
+  text-align: center;
+
+  &__input {
+    height: 66px;
+    border-radius: 6px;
+    background-color: #eef2f7;
+    font-size: 18px;
+    padding: 7px 7px 7px 5px;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+
+    &:focus,
+    &:valid {
+      background-color: #fff;
+      border-radius: 6px;
+      box-sizing: border-box;
+      border: 1px solid #eef2f7;
+    }
+  }
+
+  &__input:focus ~ &__label {
+    top: 5px;
+    font-size: 13px;
+    left: 9px;
+    transition-property: top, font-size, left;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+    opacity: 0.6;
+    text-align: center;
+    color: #74a3c7;
+  }
+
+  &__input:valid ~ &__label {
+    top: 5px;
+    font-size: 13px;
+    left: 9px;
+    transition-property: top, font-size, left;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+    opacity: 0.6;
+    text-align: center;
+    color: #74a3c7;
+  }
+
+  &__label {
+    height: 20px;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    color: #74a3c7;
+    pointer-events: none;
+    left: 18px;
+    top: 23px;
+  }
+}
+
+.call {
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: @main-color;
+  font-size: 17px;
+  line-height: 1.41;
+  text-align: center;
+  color: @text-color;
+  border: none;
+  width: auto;
+  height: 66px;
+  cursor: pointer;
+  padding: 5px 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    background-color: darken(@main-color, 25%);
+  }
 }

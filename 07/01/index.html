@@ -1,26 +1,36 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet/less" type="text/css" href="./main.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
-    <script src="./main.js" ></script>
-    <title>Задание 7.1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;subset=cyrillic" rel="stylesheet">
+  <title>Задание 7.1</title>
 </head>
 <body>
-<h1>Маска для поля с телефоном.</h1>
+<!--<h1>Маска для поля с телефоном.</h1>
 <p>
-    Написать input c маской для ввода телефона. Шаблон маски:
-    <br>
-    <code>+ 7 (_ _ _) - _ _ _ - _ _ - _ _</code>.
-    <br>
-    <input value="+7(988)-777-55-33">
-    <br>
-    Сделать обновление адреса и названия ссылки для звонка при изменении телефона в инпуте:
-    <br>
-    <a href="tel:+79887775533">Позвонить на +7(988)-777-55-33</a>
-    <br>
-    Отстилить интерфейс по своему усмотрению.
-</p>
+  Написать input c маской для ввода телефона. Шаблон маски:
+  <br>
+  <code>+ 7 (_ _ _) - _ _ _ - _ _ - _ _</code>.
+  <br>
+  <input value="+7(988)-777-55-33">
+  <br>
+  Сделать обновление адреса и названия ссылки для звонка при изменении телефона в инпуте:
+  <br>
+  <a href="tel:+79887775533">Позвонить на +7(988)-777-55-33</a>
+  <br>
+  Отстилить интерфейс по своему усмотрению.
+</p>-->
+
+  <div class="phone-field">
+    <input class="phone-field__input" type="tel" required>
+    <label class="phone-field__label">Мобильный телефон</label>
+  </div>
+
+  <button class="call" type="submit" style="display: none">Позвонить</button>
+
 </body>
+<script src="./main.js" ></script>
 </html>
