@@ -1,4 +1,84 @@
-button {
-  padding: 2px;
-  border: 1px solid black;
+@main-color: #ffdd2d;
+@main-size: 1080px;
+@text-color: #333;
+@mobile-size: 640px;
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.doubleClick-button {
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: @main-color;
+  font-size: 17px;
+  line-height: 1.41;
+  text-align: center;
+  color: @text-color;
+  position: relative;
+  border: none;
+  width: auto;
+  height: 66px;
+  cursor: pointer;
+  padding: 5px 15px;
+  margin: 12px;
+
+  &:hover {
+    background-color: darken(@main-color, 25%);
+  }
+}
+
+.click-counter {
+  position: relative;
+  display: block;
+  counter-reset: li;
+  list-style: none;
+  font: 15px 'trebuchet MS';
+  padding: 0;
+  width: 30%;
+  margin: 12px auto;
+  text-align: center;
+  align-self: center;
+
+  & a {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 2em;
+    margin: 0.5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: 0.3em;
+    transition: all 0.7s ease-out;
+
+    &:hover {
+      background: #eee;
+      transform: scale(1.1);
+    }
+  }
+
+  & > li a:hover::before {
+    transform: rotate(360deg);
+  }
+
+  & > li a::before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: 0.2em solid #eafaff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all 0.5s ease-out;
+  }
 }

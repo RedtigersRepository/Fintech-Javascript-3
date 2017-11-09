@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+
 const expect = require('expect.js');
 const { throttle } = require('./task');
 
